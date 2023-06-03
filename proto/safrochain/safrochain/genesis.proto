@@ -1,0 +1,12 @@
+syntax = "proto3";
+package gomastakepool.safrochain.safrochain;
+
+import "gogoproto/gogo.proto";
+import "safrochain/safrochain/params.proto";
+
+option go_package = "github.com/Goma-StakePool/safrochain/x/safrochain/types";
+
+// GenesisState defines the safrochain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
