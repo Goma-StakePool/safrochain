@@ -1,25 +1,29 @@
 version: 1
-accounts:
+validation: sovereign
+build:
+  main: ./cmd/safrochaind
+accounts: 
 - name: alice
   coins:
-  - 20000token
-  - 200000000stake
+  - 50000safro
+  - 3000000000000000stake
+  mnemonic: raise decline figure capable tribe normal mixed vast couch remember simple decline puppy buyer soul glove brush guilt north nurse edit bitter frame bind
 - name: bob
   coins:
-  - 10000token
+  - 10000safro
   - 100000000stake
+  mnemonic: struggle since inmate safe logic kite tag web win stay security wonder
+client:
+  openapi:
+    path: docs/static/openapi.yml
 faucet:
   name: bob
   coins:
-  - 5token
+  - 5safro
   - 100000stake
-client:
-  typescript:
-    path: ts-client
-  composables:
-    path: vue/src/composables
-  openapi:
-    path: docs/static/openapi.yml
 validators:
 - name: alice
-  bonded: 100000000stake
+  bonded: 200000000000000stake
+genesis:
+  chain_id: cosmoshub-12
+

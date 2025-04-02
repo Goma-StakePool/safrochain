@@ -1,52 +1,59 @@
 # safrochain
+
+## Overview
+Safrochain is an innovative blockchain project that aims to provide a secure and efficient platform for decentralized applications in Africa. Safrochain presents a unique opportunity to leverage the power of blockchain technology to address various challenges faced by the continent, including financial inclusion, supply chain transparency, and data security.  
+
+If you are interested in contributing to the project, please reach out to us via our [Discord](TBD) channel or send us an email at [contact@safrochain.org](contact@safrochain.org). We welcome developers, designers, and anyone passionate about blockchain technology to join our community.
+
+## Installation
+
+### Install Go
+To install Safrochain, you need to have [Go](https://golang.org/dl/) installed on your machine.
+Make sure Go is correctly configured by running the following command:
+
+```bash
+go version
+```
+### Install Ignite CLI
+To install Ignite CLI, run the following command:
+
+```bash
+curl https://get.ignite.com/cli! | bash
+```
+
+### Install git
+Install git on your machine. You can find the installation instructions for your operating system [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+### Install Node.js
+Install Node.js on your machine. You can find the installation instructions for your operating system [here](https://nodejs.org/en/download/).
+
+### Download Safrochain source code from Github
+Clone the Safrochain repository from GitHub using the following command:
+
+```bash
+git clone https://github.com/Goma-StakePool/safrochain.git
+```
+### Build the project
+Navigate to the project directory and build the project using the following command:
+
+```bash
+cd safrochain  
+ignite chain build
+```
+
+After this step, a `safrochaind` is created in the go bin directory. You can run `Safrochain` by executing the following command:
+
+```bash
+safrochaind start
+```
+
+
+
+## Connect to the Safrochain network
+
+To connect to the Safrochain network, you need to set up your local node. Follow these steps:
+
+
+## Acknowledgements
+
 **safrochain** is a blockchain built using Cosmos SDK and Tendermint and created with [Ignite CLI](https://ignite.com/cli).
-
-## Get started
-
-```
-ignite chain serve
-```
-
-`serve` command installs dependencies, builds, initializes, and starts your blockchain in development.
-
-### Configure
-
-Your blockchain in development can be configured with `config.yml`. To learn more, see the [Ignite CLI docs](https://docs.ignite.com).
-
-### Web Frontend
-
-Ignite CLI has scaffolded a Vue.js-based web app in the `vue` directory. Run the following commands to install dependencies and start the app:
-
-```
-cd vue
-npm install
-npm run serve
-```
-
-The frontend app is built using the `@starport/vue` and `@starport/vuex` packages. For details, see the [monorepo for Ignite front-end development](https://github.com/ignite/web).
-
-## Release
-To release a new version of your blockchain, create and push a new tag with `v` prefix. A new draft release with the configured targets will be created.
-
-```
-git tag v0.1
-git push origin v0.1
-```
-
-After a draft release is created, make your final changes from the release page and publish it.
-
-### Install
-To install the latest version of your blockchain node's binary, execute the following command on your machine:
-
-```
-curl https://get.ignite.com/Goma-StakePool/safrochain@latest! | sudo bash
-```
-`Goma-StakePool/safrochain` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/allinbits/starport-installer).
-
-## Learn more
-
-- [Ignite CLI](https://ignite.com/cli)
-- [Tutorials](https://docs.ignite.com/guide)
-- [Ignite CLI docs](https://docs.ignite.com)
-- [Cosmos SDK docs](https://docs.cosmos.network)
-- [Developer Chat](https://discord.gg/ignite)
